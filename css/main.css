@@ -37,7 +37,7 @@ h1 {
 	width: 50%;
 }
 
-.formStyle {
+form {
 	margin-left: 25%;
 	width:384px;
 	background-color: #f4f4f4;
@@ -45,9 +45,38 @@ h1 {
 	-moz-border-radius: 2px 2px 2px 2px;
 	-webkit-border-radius: 2px 2px 2px 2px;
 	border: 0px solid #000000;
-	-webkit-box-shadow: 0px 0px 0px 16px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 0px 0px 16px rgba(0,0,0,0.25);
-	box-shadow: 0px 0px 0px 16px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0px 0px 0px 16px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 0px 16px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 0px 16px rgba(0,0,0,0.35);
+	padding-top: 20px;
+}
 
+input[type="text"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 338px;
+	height: 40px;
+	margin-top: 2px;
+	background-color: #f6f6f6;
+	border: 1px solid #c7c7c7;
+	border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
 
+input[type="text"]:focus {
+	outline: none;
+	border: 1px solid #9b9b9b;
+	-webkit-transition: border 0.4s;
+  	-moz-transition: border 0.4s;
+  	-o-transition: border 0.4s;
+ 	transition: border 0.4s;
+
+}
+
+input[type="text"], input[type="submit"] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 }

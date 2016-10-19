@@ -6,6 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 </head>
 <body>
  
@@ -17,14 +18,14 @@
 
     <section id="sectLeft">
         <h1>Register Form</h1>
-        <form class="formStyle" action="action_page.php">
-            <input type="text" name="username">
+        <form action="action_page.php">
+            <input type="text" placeholder="Username" name="username">
             <br>
-            <input type="text" name="password">
+            <input type="text" placeholder="Password" name="password">
             <br>
-            <input type="text" name="confirmPass">
+            <input type="text" placeholder="Confirm Password" name="confirmPass">
             <br>
-            <input type="text" name="email">
+            <input type="text" placeholder="Email" name="email">
             <br>
             <select name="location" form="locForm">
                 <option value="krakow">Kraków</option>
@@ -36,10 +37,10 @@
             <input type="submit" value="Sign up">
         </form>
         <h1>Send email</h1>
-        <form class="formStyle" action="action_page.php">
-            <input type="text" name="name">
+        <form action="action_page.php">
+            <input type="text" placeholder="Your Name" name="name">
             <br>
-            <input type="text" name="email">
+            <input type="text" placeholder="Your Email" name="email">
             <br>
             <textarea rows="15" cols="40" placeholder="Type your message...">
             </textarea>
@@ -53,9 +54,9 @@
     <section id="sectRight">
         <h1>Sign in Form</h1>
         <form class="formStyle" action="action_page.php">
-            <input type="text" name="username">
+            <input type="text" placeholder="Username" name="username">
             <br>
-            <input type="text" name="password">
+            <input type="text" placeholder="Password" name="password">
             <br>
             <input type="checkbox" name="remember" value="remember">Remember me<br>
             <br><br>
@@ -63,16 +64,16 @@
         </form>
         <h1>Recover Form</h1>
         <form class="formStyle" action="action_page.php">
-            <input type="text" name="enterEmail">
+            <input type="text" placeholder="Enter your Email" name="enterEmail">
             <br>
-            <input type="text" name="enterPhNmbr">
+            <input type="text" placeholder="Enter your Phone number " name="enterPhNmbr">
             <br><br>
             <input type="submit" value="Send">
             <input type="submit" value="Done">
         </form>
         <h1>Subscribe Form</h1>
         <form class="formStyle" action="action_page.php">
-            <input type="text" name="enterEmail">
+            <input type="text" placeholder="nter your Email" name="enterEmail">
             <br><br>
             <input type="submit" value="Subscribe">
             <input type="submit" value="No, Yhanks">

@@ -2,6 +2,12 @@ body {
 	background: url("../img/background.jpg") center center;
 	background-size: cover;
 }
+#main {
+text-align: center;
+/*background-color: #e7e7e7;*/
+height: 900px;
+
+}
 
 header{
 	text-align: center;
@@ -28,17 +34,30 @@ h1 {
 }
 
 #sectLeft {
-	float: left;
-	width: 50%;
+/*	float: left;*/
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 44px;
+	height: 900px;
+/*	width: 50%;*/
+/*	padding-left: 25%;*/
 }
 
 #sectRight {
-	float: left;
-	width: 50%;
+/*	float: left;*/
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 44px;
+	height: 900px;
+/*	width: 50%;*/
+/*	padding-left: 84px;
+	padding-right: 10%;*/
+
 }
 
 form {
-	margin-left: 25%;
+/*	margin-left: 25%;*/
+	display: block;
 	width:384px;
 	background-color: #f4f4f4;
 	border-radius: 2px 2px 2px 2px;
@@ -48,25 +67,31 @@ form {
 	-webkit-box-shadow: 0px 0px 0px 16px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 0px 0px 16px rgba(0,0,0,0.35);
 	box-shadow: 0px 0px 0px 16px rgba(0,0,0,0.35);
-	padding-top: 20px;
+	padding: 20px 0;
+	margin-bottom: 40px; 
 }
 
 input[type="text"] {
-	display: block;
+	height: 40px;	
+}
+
+input[type="text"],
+textarea {
+/*	display: block;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;*/
 	width: 338px;
-	height: 40px;
-	margin-top: 2px;
+	margin-bottom: 20px;
 	background-color: #f6f6f6;
 	border: 1px solid #c7c7c7;
 	border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
+
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+textarea:focus {
 	outline: none;
 	border: 1px solid #9b9b9b;
 	-webkit-transition: border 0.4s;
@@ -76,7 +101,25 @@ input[type="text"]:focus {
 
 }
 
-input[type="text"], input[type="submit"] {
+input[type="text"], input[type="submit"], select {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
+}
+
+select {
+	background: #f6f6f6;
+	width: 338px;
+	height: 40px;
+	border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	border: 1px solid #c7c7c7;
+	color: #ababab;
+	background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 50%;
+
+}
+
+select:focus {
+	outline: none;
+	border: 1px solid #9b9b9b;
 }

@@ -123,3 +123,8 @@ select:focus {
 	outline: none;
 	border: 1px solid #9b9b9b;
 }
+
+.username {
+	background: url(img/username.png) no-repeat right center;
+	padding-left:30px;
+}

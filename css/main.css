@@ -57,7 +57,7 @@ h1 {
 
 form {
 /*	margin-left: 25%;*/
-
+	position: relative;
 	display: block;
 	width:384px;
 	background-color: #f4f4f4;
@@ -90,11 +90,7 @@ textarea {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 }
-input[type="text"]:after {
-	position: absolute;
-	border-left: 1px solid #c7c7c7;
-	left: -30px;
-}
+
 
 input[type="text"]:focus,
 textarea:focus {
@@ -132,6 +128,15 @@ select:focus {
 
 .username {
 	background: url(../img/username.png) no-repeat 10px center;
-	padding-left:50px;
+	padding-left:60px;
 	/*width: 298px;*/
+}
+
+label {
+	position: absolute;
+	z-index: 1;
+	border-right: 1px solid #c7c7c7;
+	left: 60px;
+	height: 25px;
+	margin-top: 10px;
 }

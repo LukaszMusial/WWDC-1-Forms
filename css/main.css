@@ -2,11 +2,11 @@ body {
 	background: url("../img/background.jpg") center center;
 	background-size: cover;
 }
+
 #main {
 text-align: center;
 /*background-color: #e7e7e7;*/
 height: 900px;
-
 }
 
 header{
@@ -21,8 +21,8 @@ h1 {
 	text-shadow: 1px 2px 0px #000000;
 	font-weight: 300;
 	margin-bottom: 32px;
-
 }
+
 #logo {
 	/*mix-blend-mode: overlay; only for chrome*/
 	opacity: 0.25;
@@ -52,7 +52,6 @@ h1 {
 /*	width: 50%;*/
 /*	padding-left: 84px;
 	padding-right: 10%;*/
-
 }
 
 form {
@@ -74,7 +73,8 @@ form {
 
 input[type="text"] {
 	height: 40px;
-	position: relative;	
+	position: relative;
+	padding-left:70px;
 }
 
 input[type="text"],
@@ -82,7 +82,7 @@ textarea {
 /*	display: block;
 	margin-left: auto;
 	margin-right: auto;*/
-	width: 288px;
+	width: 268px;
 	margin-bottom: 20px;
 	background-color: #f6f6f6;
 	border: 1px solid #c7c7c7;
@@ -90,7 +90,6 @@ textarea {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 }
-
 
 input[type="text"]:focus,
 textarea:focus {
@@ -100,7 +99,6 @@ textarea:focus {
   	-moz-transition: border 0.4s;
   	-o-transition: border 0.4s;
  	transition: border 0.4s;
-
 }
 
 input[type="text"], input[type="submit"], select {
@@ -113,12 +111,16 @@ select {
 	width: 338px;
 	height: 40px;
 	border-radius: 5px;
+	padding-left: 70px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 	border: 1px solid #c7c7c7;
 	color: #ababab;
-	background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 50%;
-
+	background: url(../img/triangle.gif) no-repeat 96% center,
+	url(../img/location.png) no-repeat 19px center;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 select:focus {
@@ -126,17 +128,34 @@ select:focus {
 	border: 1px solid #9b9b9b;
 }
 
-.username {
-	background: url(../img/username.png) no-repeat 10px center;
-	padding-left:60px;
-	/*width: 298px;*/
-}
-
 label {
 	position: absolute;
 	z-index: 1;
 	border-right: 1px solid #c7c7c7;
-	left: 60px;
+	left: 75px;
 	height: 25px;
 	margin-top: 10px;
+}
+.username {
+	background: url(../img/username.png) no-repeat 15px center;
+	/*width: 298px;*/
+}
+
+.password {
+	background: url(../img/password.png) no-repeat 15px center;
+}
+
+.email {
+	background: url(../img/email.png) no-repeat 15px center;
+}
+
+.number {
+	background: url(../img/phone_nmbr.gif) no-repeat 20px center;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+.cbox_l {
+	position: relative;
 }

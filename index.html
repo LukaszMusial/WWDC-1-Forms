@@ -23,19 +23,24 @@
             <label for="username"></label>
             <input class="username" type="text" placeholder="Username" name="username">
             <br>
+            <label for="password"></label>
             <input class="password" type="text" placeholder="Password" name="password">
             <br>
+            <label for="password"></label>
             <input class="password" type="text" placeholder="Confirm Password" name="confirmPass">
             <br>
+            <label for="email"></label>
             <input class="email" type="text" placeholder="Email" name="email">
             <br>
+            <label for="location"></label>
             <select class="location" name="location" form="locForm">
                 <option value="krakow">Your Location</option>
                 <option value="krakow">Kraków</option>
                 <option value="warszawa">Warszawa</option>
             </select>
             <br>
-            <input type="checkbox" name="term" value="rTerm"> I have read and accept terms of use<br>
+            <input class="cbox" type="checkbox" name="term" value="rTerm"> I have read and accept terms of use<br>
+            <label class="cbox_l" for="cbox_l"><span class="cbox_s">Coffee</span></label>
             <br><br>
             <input type="submit" value="Sign up">
         </form>
@@ -44,6 +49,7 @@
             <label for="username"></label>
             <input class="username" type="text" placeholder="Your Name" name="name">
             <br>
+            <label for="email"></label>
             <input class="email" type="text" placeholder="Your Email" name="email">
             <br>
             <textarea rows="15" cols="40" placeholder="Type your message...">
@@ -61,6 +67,7 @@
             <label for="username"></label>
             <input class="username" type="text" placeholder="Username" name="username">
             <br>
+            <label for="password"></label>
             <input class="password" type="text" placeholder="Password" name="password">
             <br>
             <input type="checkbox" name="remember" value="remember">Remember me<br>
@@ -69,8 +76,10 @@
         </form>
         <h1>Recover Form</h1>
         <form class="formStyle" action="action_page.php">
+            <label for="email"></label>
             <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
             <br>
+            <label for="number"></label>
             <input class="number" type="text" placeholder="Enter your Phone number " name="enterPhNmbr">
             <br><br>
             <input type="submit" value="Send">
@@ -78,7 +87,8 @@
         </form>
         <h1>Subscribe Form</h1>
         <form class="formStyle" action="action_page.php">
-            <input class="email" type="text" placeholder="nter your Email" name="enterEmail">
+            <label for="email"></label>
+            <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
             <br><br>
             <input type="submit" value="Subscribe">
             <input type="submit" value="No, Yhanks">

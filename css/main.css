@@ -153,9 +153,24 @@ label {
 	background: url(../img/phone_nmbr.gif) no-repeat 20px center;
 }
 
+/*styling checkboxes*/
+
 input[type="checkbox"] {
 	display: none;
 }
 .cbox_l {
 	position: relative;
 }
+.cbox_s::before,
+.box_s::after {
+	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	margin: auto;
+}
+
+.cbox_s::before {
+	width: 20px;
+	height: 20px;
+	background-color: #f4f4f4;
+

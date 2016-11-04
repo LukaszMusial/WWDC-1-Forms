@@ -155,22 +155,32 @@ label {
 
 /*styling checkboxes*/
 
-input[type="checkbox"] {
-	display: none;
-}
-.cbox_l {
+.cbox_d {
+	width: 40px;
+	height: 40px;
+	background: white;
+	margin: 5px;
+	border-radius: 5%;
 	position: relative;
 }
-.cbox_s::before,
-.box_s::after {
+
+}
+.cbox {
+	visibility: hidden;
+}
+.cbox_l {
 	position: absolute;
- 	top: 0;
- 	bottom: 0;
- 	margin: auto;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 5%;
+	cursor: pointer;
+	top: 5px;
+	left: 5px;
+	z-index: 4;
+	background: #333;
 }
 
-.cbox_s::before {
-	width: 20px;
-	height: 20px;
-	background-color: #f4f4f4;
-
+.cbox:checked + .cbox_l {
+	background: #26ca28;
+}

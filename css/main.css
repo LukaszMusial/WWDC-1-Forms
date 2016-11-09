@@ -37,7 +37,7 @@ h1 {
 /*	float: left;*/
 	display: inline-block;
 	vertical-align: top;
-	padding-right: 44px;
+	padding-right: 55px;
 	height: 900px;
 /*	width: 50%;*/
 /*	padding-left: 25%;*/
@@ -47,7 +47,7 @@ h1 {
 /*	float: left;*/
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 44px;
+	padding-left: 55px;
 	height: 900px;
 /*	width: 50%;*/
 /*	padding-left: 84px;
@@ -131,7 +131,7 @@ select:focus {
 	border: 1px solid #9b9b9b;
 }
 
-label {
+.hline {
 	position: absolute;
 	z-index: 1;
 	border-right: 1px solid #c7c7c7;
@@ -159,32 +159,39 @@ label {
 /*styling checkboxes*/
 
 .inputCbox {
-	margin-top: 10px;
+	margin: 22px;
+	float: left;
 }
 
-
-.inputCbox label {
-	position: relative;
-	min-height: 20px;
+label {
 	cursor: pointer;
-	margin: 0px;
-	padding: 0px;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+.sText {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #ababab;
 
 }
-.inputCbox label:before {
-	position: absolute;
+
+
+input[type="checkbox"] + .sText:before {
+	display: inline-block;
 	content: '';
-	height: 20px;
-	width: 20px;
-	left: 0px;
-	top: 0px;
-	vertical-align:middle;
 	border: solid 1px #c3c3c3;
     border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: -6px;
+    margin-right: 10px;
+
 }
-.inputCbox label input[type="checkbox"] {
-/*	display: none;*/
-}
-.inputCbox label:before + .inputCbox input[type="checkbox"]:checked	{
-	background:url(../img/checkbox.png) center no-repeat;
+
+
+
+input[type="checkbox"]:checked + .sText:before {
+	background:url(../img/checkbox.png) center center no-repeat;
 }

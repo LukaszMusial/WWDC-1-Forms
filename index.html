@@ -21,32 +21,32 @@
         <h1>Register Form</h1>
         <form>
             <div class="inputTekst">
-                <label for="username"></label>
+                <label class="hline" for="username"></label>
                 <input class="username" type="text" placeholder="Username" name="username">
                 <br>
-                <label for="password"></label>
+                <label class="hline" for="password"></label>
                 <input class="password" type="text" placeholder="Password" name="password">
                 <br>
-                <label for="password"></label>
+                <label class="hline" for="password"></label>
                 <input class="password" type="text" placeholder="Confirm Password" name="confirmPass">
                 <br>
-                <label for="email"></label>
+                <label class="hline" for="email"></label>
                 <input class="email" type="text" placeholder="Email" name="email">
                 <br>
-                <label for="location"></label>
+                <label class="hline" for="location"></label>
                 <select class="location" name="location" form="locForm">
                     <option value=""disabled selected class="first">Your Location</option>
                     <option value="krakow">Kraków</option>
                     <option value="warszawa">Warszawa</option>
                 </select>
             </div>
-            <div class="inputCbox">
-                
-                <label class="cbox_l">
-                    <input type="checkbox" name="terms" value="terms">I have read and accept terms of use
+            <div class="inputCbox">                
+                <label>
+                    <input type="checkbox" name="terms" value="terms"><span class="sText">I have read and accept terms of use</span>
                 </label>
             </div>
-            <br><br>
+            <div class="cf">
+            </div>
             <div class="inputSubmit">
                 <input type="submit" value="Sign up">
             </div>
@@ -54,10 +54,10 @@
         <h1>Send email</h1>
         <form>
             <div class="inputTekst">
-                <label for="username"></label>
+                <label class="hline" for="username"></label>
                 <input class="username" type="text" placeholder="Your Name" name="name">
                 <br>
-                <label for="email"></label>
+                <label class="hline" for="email"></label>
                 <input class="email" type="text" placeholder="Your Email" name="email">
                 <br>
                 <textarea rows="15" cols="40" placeholder="Type your message...">
@@ -76,10 +76,10 @@
         <h1>Sign in Form</h1>
         <form>
             <div class="inputTekst">
-                <label for="username"></label>
+                <label class="hline" for="username"></label>
                 <input class="username" type="text" placeholder="Username" name="username">
                 <br>
-                <label for="password"></label>
+                <label class="hline" for="password"></label>
                 <input class="password" type="text" placeholder="Password" name="password">
             </div>
             <div class="inputCbox">
@@ -92,10 +92,10 @@
         <h1>Recover Form</h1>
         <form>
             <div class="inputTekst">
-                <label for="email"></label>
+                <label class="hline" for="email"></label>
                 <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
                 <br>
-                <label for="number"></label>
+                <label class="hline" for="number"></label>
                 <input class="number" type="text" placeholder="Enter your Phone number " name="enterPhNmbr">
             </div>
             <div class="inputSubmit">
@@ -106,7 +106,7 @@
         <h1>Subscribe Form</h1>
         <form>
             <div class="inputTekst">
-                <label for="email"></label>
+                <label class="hline" for="email"></label>
                 <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
             </div>
             <div class="inputSubmit">

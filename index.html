@@ -48,7 +48,7 @@
             <div class="cf">
             </div>
             <div class="inputSubmit">
-                <input type="submit" value="Sign up">
+                <button class="longB" type="submit">Sign up</button>
             </div>
         </form>
         <h1>Send email</h1>
@@ -60,14 +60,18 @@
                 <label class="hline" for="email"></label>
                 <input class="email" type="text" placeholder="Your Email" name="email">
                 <br>
-                <textarea rows="15" cols="40" placeholder="Type your message...">
+                <textarea rows="15" cols="39" placeholder="Type your message...">
                 </textarea>
             </div>
-            <div class="inputCbox">  
-                <input type="checkbox" name="Copy" value="sCopy">Send copy to my email<br>
+            <div class="inputCbox">                
+                <label>
+                    <input type="checkbox" name="terms" value="terms"><span class="sText">Send a copy to my Email</span>
+                </label>
+            </div>
+            <div class="cf">
             </div>
             <div class="inputSubmit">
-                <input type="submit" value="Send Email">
+                <button class="longB" type="submit">Send Email</button>
             </div>
         </form>
     </section>
@@ -82,11 +86,15 @@
                 <label class="hline" for="password"></label>
                 <input class="password" type="text" placeholder="Password" name="password">
             </div>
-            <div class="inputCbox">
-                <input type="checkbox" name="remember" value="remember">Remember me<br>
+            <div class="inputCbox">                
+                <label>
+                    <input type="checkbox" name="terms" value="terms"><span class="sText">Remember me</span>
+                </label>
+            </div>
+            <div class="cf">
             </div>
             <div class="inputSubmit">
-                <input type="submit" value="Sign in">
+                <button type="submit">Sign in</button>
             </div>
         </form>
         <h1>Recover Form</h1>
@@ -99,8 +107,8 @@
                 <input class="number" type="text" placeholder="Enter your Phone number " name="enterPhNmbr">
             </div>
             <div class="inputSubmit">
-                <input type="submit" value="Send">
-                <input type="submit" value="Done">
+                <button type="submit">Send</button>
+                <button type="submit">Done</button>
             </div>
         </form>
         <h1>Subscribe Form</h1>
@@ -110,8 +118,8 @@
                 <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
             </div>
             <div class="inputSubmit">
-                <input type="submit" value="Subscribe">
-                <input type="submit" value="No, Yhanks">
+                <button type="submit">Subscribe</button>
+                <button type="submit">No, Yhanks</button>
             </div>
         </form>
         <img id="logoAdres" src="img/logoAdres.png">

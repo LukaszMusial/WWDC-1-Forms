@@ -40,7 +40,7 @@
                     <option value="warszawa">Warszawa</option>
                 </select>
             </div>
-            <div class="inputCbox">                
+            <div class="inputCbox floatL">                
                 <label>
                     <input type="checkbox" name="terms" value="terms"><span class="sText">I have read and accept terms of use</span>
                 </label>
@@ -60,10 +60,10 @@
                 <label class="hline" for="email"></label>
                 <input class="email" type="text" placeholder="Your Email" name="email">
                 <br>
-                <textarea rows="15" cols="39" placeholder="Type your message...">
+                <textarea rows="12" cols="20" placeholder="Type your message...">
                 </textarea>
             </div>
-            <div class="inputCbox">                
+            <div class="inputCbox floatL">                
                 <label>
                     <input type="checkbox" name="terms" value="terms"><span class="sText">Send a copy to my Email</span>
                 </label>
@@ -86,15 +86,15 @@
                 <label class="hline" for="password"></label>
                 <input class="password" type="text" placeholder="Password" name="password">
             </div>
-            <div class="inputCbox">                
+            <div class="inputCboxR floatL">                
                 <label>
                     <input type="checkbox" name="terms" value="terms"><span class="sText">Remember me</span>
                 </label>
             </div>
-            <div class="cf">
+            <div class="inputSubmit floatR">
+                <button class="shortB bigFont" type="submit">Sign in</button>
             </div>
-            <div class="inputSubmit">
-                <button type="submit">Sign in</button>
+            <div class="cf">
             </div>
         </form>
         <h1>Recover Form</h1>
@@ -107,8 +107,10 @@
                 <input class="number" type="text" placeholder="Enter your Phone number " name="enterPhNmbr">
             </div>
             <div class="inputSubmit">
-                <button type="submit">Send</button>
-                <button type="submit">Done</button>
+                <button class="shortB floatL" type="submit">Send</button>
+                <button class="shortB floatR" type="submit">Done</button>
+            </div>
+            <div class="cf">
             </div>
         </form>
         <h1>Subscribe Form</h1>
@@ -118,8 +120,10 @@
                 <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
             </div>
             <div class="inputSubmit">
-                <button type="submit">Subscribe</button>
-                <button type="submit">No, Yhanks</button>
+                <button class="shortB floatL" type="submit">Subscribe</button>
+                <button class="shortB red floatR" type="submit">No, Yhanks</button>
+            </div>
+            <div class="cf">
             </div>
         </form>
         <img id="logoAdres" src="img/logoAdres.png">

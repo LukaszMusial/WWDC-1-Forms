@@ -4,9 +4,8 @@ body {
 }
 
 #main {
-text-align: center;
-/*background-color: #e7e7e7;*/
-height: 900px;
+	text-align: center;
+	height: 900px;
 }
 
 header{
@@ -68,35 +67,54 @@ form {
 }
 
 .inputTekst {
-/*	margin-left: 25%;*/
 	position: relative;
-	display: block; 
-/*	width:384px;*/
+	display: block;
+	width:361px;
 }
+
+.floatL	{
+	float: left;
+}
+
+.floatR {
+	float: right;
+}
+
+#logoAdres {
+	margin-top: 70px;
+	opacity: 0.25;
+}
+/*-------------------------------styling inputs----------------------------------*/
 
 input[type="text"] {
 	height: 40px;
-	width: 78%;
-/*	position: relative;*/
+	width: 80%;
 	padding-left:70px;
-
+	margin-bottom: 20px;
 }
 
 input[type="text"],
 textarea {
-/*	display: block;
-	margin-left: auto;
-	margin-right: auto;*/
-;
-	margin-bottom: 20px;
-	background-color: #f6f6f6;
+-webkit-box-shadow: inset 0px 39px 79px -33px rgba(255,255,255,1);
+-moz-box-shadow: inset 0px 39px 79px -33px rgba(255,255,255,1);
+box-shadow: inset 0px 39px 79px -33px rgba(255,255,255,1);
 	border: 1px solid #c7c7c7;
 	border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+    z-index: -2;
 }
+
 textarea{
 	width: 97%;
+	resize: none;
+	background: -moz-linear-gradient(270deg, rgba(250,250,250,1) 0%, rgba(244,244,244,1) 34%, rgba(244,244,244,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(250,250,250,1)), color-stop(34%, rgba(244,244,244,1)), color-stop(100%, rgba(244,244,244,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(270deg, rgba(250,250,250,1) 0%, rgba(244,244,244,1) 34%, rgba(244,244,244,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(270deg, rgba(250,250,250,1) 0%, rgba(244,244,244,1) 34%, rgba(244,244,244,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(270deg, rgba(250,250,250,1) 0%, rgba(244,244,244,1) 34%, rgba(244,244,244,1) 100%); /* ie10+ */
+	background: linear-gradient(180deg, rgba(250,250,250,1) 0%, rgba(244,244,244,1) 34%, rgba(244,244,244,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FAFAFA', endColorstr='#f4f4f4',GradientType=0 ); /* ie6-9 */
 }
 
 input[type="text"]:focus,
@@ -115,6 +133,7 @@ input[type="text"], input[type="submit"], select {
 }
 
 select {
+	cursor: pointer;
 	background: #f6f6f6;
 	width: 99%;
 	height: 42px;
@@ -146,7 +165,6 @@ select:focus {
 }
 .username {
 	background: url(../img/username.png) no-repeat 15px center;
-
 }
 
 .password {
@@ -161,13 +179,14 @@ select:focus {
 	background: url(../img/phone_nmbr.gif) no-repeat 20px center;
 }
 
-/*styling checkboxes*/
+/*-------------------------------styling checkboxes----------------------------------*/
 
 .inputCbox {
-	margin: 22px 0;
-	float: left;
+	margin: 12px 0;
 }
-
+.inputCboxR	{
+	margin-top: 7px;
+}
 label {
 	cursor: pointer;
 }
@@ -180,6 +199,10 @@ input[type="checkbox"] {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: #ababab;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
 }
 
 input[type="checkbox"] + .sText:before {
@@ -197,11 +220,10 @@ input[type="checkbox"]:checked + .sText:before {
 	background:url(../img/checkbox.png) center center no-repeat;
 }
 
-/*buttons*/
+/*-------------------------------styling buttons----------------------------------*/
 
-.longB {
-	width: 100%;
-	font-size: 22px;
+button {
+	cursor: pointer;
 	font-family: 'Open Sans', sans-serif;
 	color: white;
 	font-weight: 500;
@@ -211,5 +233,55 @@ input[type="checkbox"]:checked + .sText:before {
 	border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
+    text-shadow: 1px 1px 0px #000000;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+	background: -moz-linear-gradient(270deg, rgba(150,237,36,1) 0%, rgba(130,207,31,1) 34%, rgba(118,186,28,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(150,237,36,1)), color-stop(34%, rgba(130,207,31,1)), color-stop(100%, rgba(118,186,28,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(270deg, rgba(150,237,36,1) 0%, rgba(130,207,31,1) 34%, rgba(118,186,28,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(270deg, rgba(150,237,36,1) 0%, rgba(130,207,31,1) 34%, rgba(118,186,28,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(270deg, rgba(150,237,36,1) 0%, rgba(130,207,31,1) 34%, rgba(118,186,28,1) 100%); /* ie10+ */
+	background: linear-gradient(180deg, rgba(150,237,36,1) 0%, rgba(130,207,31,1) 34%, rgba(118,186,28,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96ED24', endColorstr='#76BA1C',GradientType=0 ); /* ie6-9 */
 
+
+}
+
+button:focus  {
+	outline: none;
+
+}
+button:active  {
+	opacity: 0.7;
+}
+
+.longB	{
+	width: 100%;
+	font-size: 22px;
+}
+
+.shortB {
+	width: 150px;
+	height: 40px;
+	font-size: 17px;
+}
+
+.inputSubmit .red {
+	background: #e93842;
+	border: 1px solid #92353d;
+	background: -moz-linear-gradient(270deg, rgba(255,133,133,1) 0%, rgba(255,87,87,1) 34%, rgba(242,53,75,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,133,133,1)), color-stop(34%, rgba(255,87,87,1)), color-stop(100%, rgba(242,53,75,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(270deg, rgba(255,133,133,1) 0%, rgba(255,87,87,1) 34%, rgba(242,53,75,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(270deg, rgba(255,133,133,1) 0%, rgba(255,87,87,1) 34%, rgba(242,53,75,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(270deg, rgba(255,133,133,1) 0%, rgba(255,87,87,1) 34%, rgba(242,53,75,1) 100%); /* ie10+ */
+	background: linear-gradient(180deg, rgba(255,133,133,1) 0%, rgba(255,87,87,1) 34%, rgba(242,53,75,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF8585', endColorstr='#F2354B',GradientType=0 ); /* ie6-9 */
+}
+
+.inputSubmit .bigFont {
+	width: 140px;
+	font-size: 22px;
+	padding: 5px 0;
 }

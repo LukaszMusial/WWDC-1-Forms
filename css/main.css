@@ -16,8 +16,10 @@ header{
 #logo:hover {
 	opacity: 1;
 }
-
-.main {
+.main{
+	display: flex;
+}
+.wrapper {
 /*	text-align: center;*/
 	/*height: 900px;*/
 /*	display: -webkit-flex;
@@ -26,21 +28,39 @@ header{
     align-items: center;*/
  /*   -webkit-justify-content: center;
     justify-content: center;*/
+
+
     margin: 0 auto;
-    display: -webkit-flex; /* Safari */
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-    display: flex;   
+/*    display: -webkit-flex;
+    display: flex; 
+    -webkit-flex-wrap: wrap;  
     flex-wrap: wrap;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
     flex-direction: column;
+    -webkit-flex-direction: column;
     align-content: space-between;
-    height: 1250px;
+    -webkit-align-content: space-between;*/
+   flex: initial;
+      height: 1250px;
     width: 916px;
+    min-width: 500px;
+
+
+display: flex;
+align-items: center;
+/*justify-content: flex-start;*/
+flex-flow: column wrap;
+align-content: space-between;
+
+
+
 }
 .formContainer	{
 	-webkit-flex: initial;
     flex: initial;
     width: 382px;
-    /*min-width: 300px;*/
+    min-width: 300px;
 /*    display: -webkit-flex;
   	display: flex;*/
 /*  	flex-direction: column;

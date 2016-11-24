@@ -16,122 +16,124 @@
     </header>
 
     <div class="main" >
-        <div class="formContainer">
-            <h1>Register Form</h1>
-            <form>
-                <div class="inputTekst">
-                    <label class="hline" for="username"></label>
-                    <input class="username" type="text" placeholder="Username" name="username">
-                    <br>
-                    <label class="hline" for="password"></label>
-                    <input class="password" type="text" placeholder="Password" name="password">
-                    <br>
-                    <label class="hline" for="password"></label>
-                    <input class="password" type="text" placeholder="Confirm Password" name="confirmPass">
-                    <br>
-                    <label class="hline" for="email"></label>
-                    <input class="email" type="text" placeholder="Email" name="email">
-                    <br>
-                    <label class="hline" for="location"></label>
-                    <select class="location" name="location" form="locForm">
-                        <option value=""disabled selected class="first">Your Location</option>
-                        <option value="krakow">Kraków</option>
-                        <option value="warszawa">Warszawa</option>
-                    </select>
-                </div>
-                <div class="inputCbox floatL">                
-                    <label>
-                        <input type="checkbox" name="terms" value="terms"><span class="sText">I have read and accept terms of use</span>
-                    </label>
-                </div>
-                <div class="cf">
-                </div>
-                <div class="inputSubmit">
-                    <button class="longB" type="submit">Sign up</button>
-                </div>
-            </form>
-        </div>
-        <div class="formContainer">
-            <h1>Send email</h1>
-            <form>
-                <div class="inputTekst">
-                    <label class="hline" for="username"></label>
-                    <input class="username" type="text" placeholder="Your Name" name="name">
-                    <br>
-                    <label class="hline" for="email"></label>
-                    <input class="email" type="text" placeholder="Your Email" name="email">
-                    <br>
-                    <textarea rows="12" cols="20" placeholder="Type your message..."></textarea>
-                </div>
-                <div class="inputCbox floatL">                
-                    <label>
-                        <input type="checkbox" name="terms" value="terms"><span class="sText">Send a copy to my Email</span>
-                    </label>
-                </div>
-                <div class="cf">
-                </div>
-                <div class="inputSubmit">
-                    <button class="longB" type="submit">Send Email</button>
-                </div>
-            </form>
-        </div>
-        <div class="formContainer">
-            <h1>Sign in Form</h1>
-            <form>
-                <div class="inputTekst">
-                    <label class="hline" for="username"></label>
-                    <input class="username" type="text" placeholder="Username" name="username">
-                    <br>
-                    <label class="hline" for="password"></label>
-                    <input class="password" type="text" placeholder="Password" name="password">
-                </div>
-                <div class="inputCboxR floatL">                
-                    <label>
-                        <input type="checkbox" name="terms" value="terms"><span class="sText">Remember me</span>
-                    </label>
-                </div>
-                <div class="inputSubmit floatR">
-                    <button class="shortB bigFont" type="submit">Sign in</button>
-                </div>
-                <div class="cf">
-                </div>
-            </form>
-        </div>
-        <div class="formContainer">
-            <h1>Recover Form</h1>
-            <form>
-                <div class="inputTekst">
-                    <label class="hline" for="email"></label>
-                    <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
-                    <br>
-                    <label class="hline" for="number"></label>
-                    <input class="number" type="text" placeholder="Enter your Phone number " name="enterPhNmbr">
-                </div>
-                <div class="inputSubmit">
-                    <button class="shortB floatL" type="submit">Send</button>
-                    <button class="shortB floatR" type="submit">Done</button>
-                </div>
-                <div class="cf">
-                </div>
-            </form>
-        </div>
-        <div class="formContainer">
-            <h1>Subscribe Form</h1>
-            <form>
-                <div class="inputTekst">
-                    <label class="hline" for="email"></label>
-                    <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
-                </div>
-                <div class="inputSubmit">
-                    <button class="shortB floatL" type="submit">Subscribe</button>
-                    <button class="shortB red floatR" type="submit">No, Yhanks</button>
-                </div>
-                <div class="cf">
-                </div>
-            </form>
-        </div>
-        <div class="formContainer">
-            <img id="logoAdres" src="img/logoAdres.png">
+        <div class="wrapper">
+            <div class="formContainer">
+                <h1>Register Form</h1>
+                <form>
+                    <div class="inputTekst">
+                        <label class="hline" for="username"></label>
+                        <input class="username" type="text" placeholder="Username" name="username">
+                        <br>
+                        <label class="hline" for="password"></label>
+                        <input class="password" type="text" placeholder="Password" name="password">
+                        <br>
+                        <label class="hline" for="password"></label>
+                        <input class="password" type="text" placeholder="Confirm Password" name="confirmPass">
+                        <br>
+                        <label class="hline" for="email"></label>
+                        <input class="email" type="text" placeholder="Email" name="email">
+                        <br>
+                        <label class="hline" for="location"></label>
+                        <select class="location" name="location" form="locForm">
+                            <option value=""disabled selected class="first">Your Location</option>
+                            <option value="krakow">Kraków</option>
+                            <option value="warszawa">Warszawa</option>
+                        </select>
+                    </div>
+                    <div class="inputCbox floatL">                
+                        <label>
+                            <input type="checkbox" name="terms" value="terms"><span class="sText">I have read and accept terms of use</span>
+                        </label>
+                    </div>
+                    <div class="cf">
+                    </div>
+                    <div class="inputSubmit">
+                        <button class="longB" type="submit">Sign up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="formContainer">
+                <h1>Send email</h1>
+                <form>
+                    <div class="inputTekst">
+                        <label class="hline" for="username"></label>
+                        <input class="username" type="text" placeholder="Your Name" name="name">
+                        <br>
+                        <label class="hline" for="email"></label>
+                        <input class="email" type="text" placeholder="Your Email" name="email">
+                        <br>
+                        <textarea rows="12" cols="20" placeholder="Type your message..."></textarea>
+                    </div>
+                    <div class="inputCbox floatL">                
+                        <label>
+                            <input type="checkbox" name="terms" value="terms"><span class="sText">Send a copy to my Email</span>
+                        </label>
+                    </div>
+                    <div class="cf">
+                    </div>
+                    <div class="inputSubmit">
+                        <button class="longB" type="submit">Send Email</button>
+                    </div>
+                </form>
+            </div>
+            <div class="formContainer">
+                <h1>Sign in Form</h1>
+                <form>
+                    <div class="inputTekst">
+                        <label class="hline" for="username"></label>
+                        <input class="username" type="text" placeholder="Username" name="username">
+                        <br>
+                        <label class="hline" for="password"></label>
+                        <input class="password" type="text" placeholder="Password" name="password">
+                    </div>
+                    <div class="inputCboxR floatL">                
+                        <label>
+                            <input type="checkbox" name="terms" value="terms"><span class="sText">Remember me</span>
+                        </label>
+                    </div>
+                    <div class="inputSubmit floatR">
+                        <button class="shortB bigFont" type="submit">Sign in</button>
+                    </div>
+                    <div class="cf">
+                    </div>
+                </form>
+            </div>
+            <div class="formContainer">
+                <h1>Recover Form</h1>
+                <form>
+                    <div class="inputTekst">
+                        <label class="hline" for="email"></label>
+                        <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
+                        <br>
+                        <label class="hline" for="number"></label>
+                        <input class="number" type="text" placeholder="Enter your Phone number " name="enterPhNmbr">
+                    </div>
+                    <div class="inputSubmit">
+                        <button class="shortB floatL" type="submit">Send</button>
+                        <button class="shortB floatR" type="submit">Done</button>
+                    </div>
+                    <div class="cf">
+                    </div>
+                </form>
+            </div>
+            <div class="formContainer">
+                <h1>Subscribe Form</h1>
+                <form>
+                    <div class="inputTekst">
+                        <label class="hline" for="email"></label>
+                        <input class="email" type="text" placeholder="Enter your Email" name="enterEmail">
+                    </div>
+                    <div class="inputSubmit">
+                        <button class="shortB floatL" type="submit">Subscribe</button>
+                        <button class="shortB red floatR" type="submit">No, Yhanks</button>
+                    </div>
+                    <div class="cf">
+                    </div>
+                </form>
+            </div>
+            <div class="formContainer">
+                <img id="logoAdres" src="img/logoAdres.png">
+            </div>
         </div>
     </div>
 </body>

@@ -1,0 +1,2 @@
+parametr css columns
+https://css-tricks.com/guide-responsive-friendly-css-columns/

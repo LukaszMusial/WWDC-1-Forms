@@ -31,7 +31,11 @@ header{
 
 
     margin: 0 auto;
-/*    display: -webkit-flex;
+    column-count: 2;
+    column-width: 200px;
+    column-gap: 80px;
+    /*cloumn-fill: auto;*/
+  /*  display: -webkit-flex;
     display: flex; 
     -webkit-flex-wrap: wrap;  
     flex-wrap: wrap;
@@ -41,30 +45,32 @@ header{
     -webkit-flex-direction: column;
     align-content: space-between;
     -webkit-align-content: space-between;*/
-   flex: initial;
-      height: 1250px;
-    width: 916px;
-    min-width: 500px;
+   /*flex: initial;*/
+
+    /*height: 1250px;*/
+    /*width: 916px;*/
+    /*min-width: 500px;*/
 
 
-display: flex;
-align-items: center;
+/*display: flex;*/
+/*align-items: center;*/
 /*justify-content: flex-start;*/
-flex-flow: column wrap;
-align-content: space-between;
+/*flex-flow: column wrap;*/
+/*align-content: space-between;*/
 
 
 
 }
 .formContainer	{
-	-webkit-flex: initial;
-    flex: initial;
-    width: 382px;
-    min-width: 300px;
+/*	-webkit-flex: initial;
+    flex: initial;*/
+    /*width: 382px;*/
+ /*   min-width: 300px;*/
 /*    display: -webkit-flex;
   	display: flex;*/
 /*  	flex-direction: column;
   	-webkit-flex-direction: column;*/
+  	max-width: 421px; /*????*/
 
 }
 
@@ -323,7 +329,7 @@ button:active  {
 }
 
 .inputSubmit .bigFont {
-	width: 140px;
+	/*width: 140px;*/
 	font-size: 22px;
 	padding: 5px 0;
 }

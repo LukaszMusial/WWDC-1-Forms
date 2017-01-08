@@ -1,6 +1,7 @@
 body {
 	background: url("../img/background.jpg") center center;
 	background-size: cover;
+	min-width: 320px;
 }
 
 .logo {
@@ -78,29 +79,19 @@ form {
 
 /*-------------------------------rwd----------------------------------*/
 
-@media 	only screen and (max-width: 690px)	{
+@media 	only screen and (max-width: 845px)	{
 	.wrapper	{
 		column-count: 1;
 	}
 }	
 
 
-@media 	only screen and (max-width: 850px)	{
+@media 	only screen and (max-width: 910px)	{
 	.wrapper	{
 		column-gap: 2em;
 	}
 }
 
-
-@media screen and (max-width: 780px) and (min-width: 690px)	{
-	.gap	{
-		margin-top: 15px;
-	}
-	.floatRshrtBs	{
-		float: none;
-		display: block;
-	}
-}
 @media 	only screen and (max-width: 470px)	{
 	.logo	{
 		background: url("../img/logoS.png");
@@ -108,6 +99,13 @@ form {
 		width: 293px;
 		margin-bottom: 35px;
 		margin-top: 25px;
+	}
+}
+
+@media 	only screen and (max-width: 420px)	{
+	input[type="text"] {
+		padding-right: 0px;
+		width: 50%;
 	}
 }
 @media 	only screen and (max-width: 390px)	{

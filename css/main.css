@@ -3,19 +3,23 @@ body {
 	background-size: cover;
 }
 
-header{
-	text-align: center;
-}
 
-#logo {
+.logo {
 	/*mix-blend-mode: overlay; only for chrome*/
 	opacity: 0.25;
-	margin: 50px 0 20px 0;
+	/*margin: 50px 0 20px 0;*/
+	background: url("../img/logo.png");
+	height: 111px;
+	width: 429px;
+	margin: 0 auto;
+	margin-top: 55px;
+	margin-bottom: 25px;
 }
-
-#logo:hover {
+.logo:hover {
 	opacity: 1;
 }
+
+/*-------------------------------layout----------------------------------*/
 .main{
 	display: flex;
 	/*background-color: red;*/
@@ -35,7 +39,8 @@ header{
     margin: 0 auto;
     column-count: 2;
     column-width: 200px;
-    column-gap: 80px;
+    column-gap: 6em;
+    /*min-width: 370px;*/
     /*background-color: blue;*/
 
     /*cloumn-fill: auto;*/
@@ -62,9 +67,9 @@ header{
 /*flex-flow: column wrap;*/
 /*align-content: space-between;*/
 
-
-
 }
+
+
 .formContainer	{
 /*	-webkit-flex: initial;
     flex: initial;*/
@@ -134,18 +139,83 @@ form {
 .floatR {
 	float: right;
 }
+.floatRshrtBs	{
+	float: right;
+}
 
-#logoAdres {
-	margin-top: 50px;
+.logoAdres {
+	background: url("../img/logoAdres.png");
+	height: 130px;
+	width: 353px;
+	margin-top: 90px;
+	margin-bottom: 10px;
 	opacity: 0.25;
 }
+
+/*-------------------------------rwd----------------------------------*/
+
+@media 	only screen and (max-width: 650px)	{
+	.wrapper	{
+		column-count: 1;
+	}
+}	
+
+
+@media 	only screen and (max-width: 830px)	{
+	.wrapper	{
+		column-gap: 2em;
+	}
+}
+
+
+@media screen and (max-width: 750px) and (min-width: 650px)	{
+	.gap	{
+		margin-top: 15px;
+	}
+	.floatRshrtBs	{
+		float: none;
+		display: block;
+	}
+}
+@media 	only screen and (max-width: 470px)	{
+	.logo	{
+		background: url("../img/logoS.png");
+		height: 221px;
+		width: 293px;
+		margin-bottom: 35px;
+		margin-top: 25px;
+	}
+}
+@media 	only screen and (max-width: 370px)	{
+	.logoAdres {
+		background: url("../img/logoAdresS.png");
+		height: 130px;
+		width: 246px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.gap	{
+		margin-top: 15px;
+	}
+	.floatRshrtBs	{
+		float: none;
+		display: block;
+	}	
+}
+
+
+
 /*-------------------------------styling inputs----------------------------------*/
 
 input[type="text"] {
+	/*resize:both;*/
 	height: 40px;
-	width: 77%;
+	max-width: 383px;
+	width: 100%; /*cos z tym zrobic*/
+	/*min-width: 35px;*/
 	padding-left:70px;
 	margin-bottom: 20px;
+	box-sizing: border-box;
 }
 
 input[type="text"],

@@ -1,2 +1,16 @@
 parametr css columns
 https://css-tricks.com/guide-responsive-friendly-css-columns/
+
+grafiki png podmieniæ na mobile
+
+d³ugoœæ ipunt text (input type text flow wrapping)
+
+szerokoœæ boxów z inputami
+
+651 - 750px
+
+min 370px
+
+min 320px dostosowaæ button
+
+columnwidth 300px-400px

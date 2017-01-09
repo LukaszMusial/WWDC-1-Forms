@@ -1,7 +1,6 @@
 body {
 	background: url("../img/background.jpg") center center;
 	background-size: cover;
-	min-width: 320px;
 }
 
 .logo {
@@ -75,54 +74,6 @@ form {
 	margin-top: 90px;
 	margin-bottom: 10px;
 	opacity: 0.25;
-}
-
-/*-------------------------------rwd----------------------------------*/
-
-@media 	only screen and (max-width: 845px)	{
-	.wrapper	{
-		column-count: 1;
-	}
-}	
-
-
-@media 	only screen and (max-width: 910px)	{
-	.wrapper	{
-		column-gap: 2em;
-	}
-}
-
-@media 	only screen and (max-width: 470px)	{
-	.logo	{
-		background: url("../img/logoS.png");
-		height: 221px;
-		width: 293px;
-		margin-bottom: 35px;
-		margin-top: 25px;
-	}
-}
-
-@media 	only screen and (max-width: 420px)	{
-	input[type="text"] {
-		padding-right: 0px;
-		width: 50%;
-	}
-}
-@media 	only screen and (max-width: 390px)	{
-	.logoAdres {
-		background: url("../img/logoAdresS.png");
-		height: 130px;
-		width: 246px;
-		margin: 0 auto;
-		margin-bottom: 10px;
-	}
-	.gap	{
-		margin-top: 15px;
-	}
-	.floatRshrtBs	{
-		float: none;
-		display: block;
-	}	
 }
 
 /*-------------------------------styling inputs----------------------------------*/
@@ -329,4 +280,66 @@ button:active  {
 .inputSubmit .bigFont {
 	font-size: 22px;
 	padding: 5px 0;
+}
+
+
+/*-------------------------------rwd----------------------------------*/
+
+@media 	only screen and (max-width: 845px)	{
+	.wrapper	{
+		column-count: 1;
+	}
+}	
+
+
+@media 	only screen and (max-width: 910px)	{
+	.wrapper	{
+		column-gap: 2em;
+	}
+}
+
+@media 	only screen and (max-width: 470px)	{
+	.logo	{
+		background: url("../img/logoS.png");
+		height: 221px;
+		width: 293px;
+		margin-bottom: 35px;
+		margin-top: 25px;
+	}
+}
+
+@media 	only screen and (max-width: 420px)	{
+	h1	{
+		font-size: 24px;
+	}
+	input[type="text"] {
+		padding-right: 0px;
+		padding-left: 20px;
+		background: none;
+	}
+	.hline	{
+	display: none;
+	}
+	.longB	{
+		font-size: 18px;
+	}
+	.shortB  {
+		font-size: 15px;
+	}
+}
+@media 	only screen and (max-width: 390px)	{
+	.logoAdres {
+		background: url("../img/logoAdresS.png");
+		height: 130px;
+		width: 246px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.gap	{
+		margin-top: 15px;
+	}
+	.floatRshrtBs	{
+		float: none;
+		display: block;
+	}	
 }

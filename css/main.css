@@ -26,8 +26,7 @@ body {
 .wrapper {
     margin: 0 auto;
     column-count: 2;
-    column-width: 321px; 
-    column-gap: 6em;
+    column-gap: 8em;
 }
 
 h1 {
@@ -49,11 +48,12 @@ form {
 	background-clip: padding-box;
 	padding: 20px;
 	margin-bottom: 40px;
+	width: 90%;
+
 }
 
 .inputTekst {
 	position: relative;
-	display: block;
 }
 
 .floatL	{
@@ -82,7 +82,6 @@ input[type="text"] {
 	height: 40px;
 	width: 100%;
 	padding-left:70px;
-	padding-right: 110px;
 	margin-bottom: 20px;
 	box-sizing: border-box;
 }
@@ -292,9 +291,9 @@ button:active  {
 }	
 
 
-@media 	only screen and (max-width: 910px)	{
+@media 	only screen and (max-width: 940px)	{
 	.wrapper	{
-		column-gap: 2em;
+		column-gap: 5em;
 	}
 }
 
@@ -314,7 +313,7 @@ button:active  {
 	}
 	input[type="text"] {
 		padding-right: 0px;
-		padding-left: 20px;
+		padding-left: `20px;
 		background: none;
 	}
 	.hline	{

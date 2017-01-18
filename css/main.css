@@ -21,12 +21,15 @@ body {
 
 .main{
 	display: flex;
+	display: -moz-flex;
 }
 
 .wrapper {
     margin: 0 auto;
     column-count: 2;
     column-gap: 8em;
+    -moz-column-count: 2;
+    -moz-column-gap: 8em;
 }
 
 h1 {
@@ -84,6 +87,7 @@ input[type="text"] {
 	padding-left:70px;
 	margin-bottom: 20px;
 	box-sizing: border-box;
+	moz-box-sizing: border-box;
 }
 
 input[type="text"],
